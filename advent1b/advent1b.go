@@ -9,16 +9,16 @@ import (
 )
 
 // [A] sum of all digits that match the next digit in the list.
-// [B] The list is circular, so the digit after the last digit is the first digit in the list.
+// [B] consider the digit halfway around the circular list.
 func processLine(line string) {
 	var code int
 	length := len(line)
 	halfWay := length / 2
 
 	for i := 0 ; i < length ; i++ {
+		// [B] next digit is halfWay away
 		nextPos := i + halfWay
 
-		// [B] next digit for last is the first in the list
 		if (nextPos == length) {
 			nextPos = 0
 		}
