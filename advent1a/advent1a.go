@@ -1,4 +1,3 @@
-// build with go build advent1a.go
 package main
 
 import (
