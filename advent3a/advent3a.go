@@ -61,8 +61,6 @@ func processLine(line string) int {
 		direction++
 	}
 
-	return getDistance(x, y)
-
 }
 
 
